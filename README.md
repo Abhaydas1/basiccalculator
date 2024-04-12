@@ -4,25 +4,25 @@ Hello, its a python code for an application based usage.
 
 #basic calculator with user defined inputs and usage.
 
-def add(numbers):          #for addition
+def add(numbers):
     result = 0
     for num in numbers:
         result += num
     return result
 
-def subtract(numbers):          #for subtraction
+def subtract(numbers):
     result = numbers[0]
     for num in numbers[1:]:
         result -= num
     return result
 
-def multiply(numbers):          #for multiplication
+def multiply(numbers):
     result = 1
     for num in numbers:
         result *= num
     return result
 
-def divide(numbers):          #for division
+def divide(numbers):
     if 0 in numbers[1:]:
         return "Error! Division by zero."
     else:
@@ -63,4 +63,4 @@ def calculator():
         calculator()
     else:
         print("Thank you for using the User Defined Calculator!")
-calculator()          #function calling
+calculator()
